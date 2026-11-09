@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<title id="title">Hammad — 3D Developer Profile</title>
+<desc id="desc">A futuristic isometric developer workstation with a floating monitor, code panels, glowing 3D cube and geometric platform.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset=".55" stop-color="#0b1d31"/><stop offset="1" stop-color="#102d45"/></linearGradient>
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8af2ff"/><stop offset="1" stop-color="#138bbd"/></linearGradient>
+  <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9b8cff"/><stop offset="1" stop-color="#4c42a6"/></linearGradient>
+  <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#142e46"/><stop offset="1" stop-color="#07101e"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur in="SourceAlpha" stdDeviation="9"/><feOffset dy="12"/><feComponentTransfer><feFuncA type="linear" slope=".45"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#4ebde0" stroke-opacity=".12" stroke-width="1"/></pattern>
+</defs>
+<rect width="1200" height="430" rx="24" fill="url(#bg)"/>
+<rect width="1200" height="430" rx="24" fill="url(#grid)"/>
+<circle cx="930" cy="150" r="150" fill="#1689b4" opacity=".10" filter="url(#glow)"/>
+<circle cx="1010" cy="300" r="100" fill="#7b6cff" opacity=".10" filter="url(#glow)"/>
+<!-- isometric base -->
+<g filter="url(#shadow)">
+ <path d="M620 340 900 205 1138 318 858 405Z" fill="#102d45" stroke="#39bde5" stroke-opacity=".7" stroke-width="2"/>
+ <path d="M620 340 858 405 858 420 620 355Z" fill="#081522"/>
+ <path d="M858 405 1138 318 1138 333 858 420Z" fill="#0b2032"/>
+ <path d="M668 340 900 230 1090 320 858 388Z" fill="#0c1d2d" stroke="#286b8a"/>
+</g>
+<!-- monitor -->
+<g filter="url(#shadow)">
+ <path d="M750 92 1000 32 1110 84 858 148Z" fill="#244c67" stroke="#7beaff" stroke-width="2"/>
+ <path d="M750 92 858 148 858 292 750 236Z" fill="#102c43" stroke="#3ba9d0" stroke-width="2"/>
+ <path d="M858 148 1110 84 1110 229 858 292Z" fill="url(#screen)" stroke="#58d7ff" stroke-width="2"/>
+ <path d="M858 292 1110 229 1094 245 858 306Z" fill="#081827"/>
+ <path d="M750 236 858 292 858 306 750 250Z" fill="#0b1c2c"/>
+</g>
+<!-- code on screen -->
+<g stroke-linecap="round" fill="none">
+ <path d="M890 125 930 115M890 143 1004 114M890 161 960 144M890 179 1035 143M890 198 985 175M890 217 1060 174M890 237 975 216" stroke="#50d9ff" stroke-width="5" opacity=".85"/>
+ <path d="M1020 110 1070 98M1000 155 1080 135M1010 195 1080 177M1000 234 1060 219" stroke="#9d91ff" stroke-width="5" opacity=".9"/>
+ <circle cx="883" cy="110" r="4" fill="#72edc2"/><circle cx="897" cy="107" r="4" fill="#f7c76b"/><circle cx="911" cy="103" r="4" fill="#ff7c91"/>
+</g>
+<!-- keyboard -->
+<g filter="url(#shadow)">
+ <path d="M670 319 810 251 928 304 786 374Z" fill="#1b3d56" stroke="#55c9ed" stroke-width="1.5"/>
+ <path d="M690 318 810 260 908 304 786 361Z" fill="#0b1a29"/>
+ <g stroke="#59bfe1" stroke-opacity=".75" stroke-width="2">
+ <path d="m704 317 105-51m-84 65 105-51m-84 65 105-51m-84 65 105-51"/>
+ <path d="m731 303 99 44m-77-65 99 44m-77-65 99 44"/>
+ </g>
+</g>
+<!-- floating glass panels -->
+<g filter="url(#shadow)">
+ <path d="M638 112 716 76 778 105 700 143Z" fill="#17415b" fill-opacity=".9" stroke="#6fe7ff" stroke-width="1.5"/>
+ <path d="M638 112 700 143 700 207 638 176Z" fill="#0d263b" stroke="#3c9fca"/>
+ <path d="M700 143 778 105 778 169 700 207Z" fill="#12334b" stroke="#3c9fca"/>
+ <path d="m657 125 42-20m-42 34 55-27m-55 42 35-17" stroke="#72e5ff" stroke-width="4" stroke-linecap="round"/>
+</g>
+<g filter="url(#shadow)">
+ <path d="M1000 265 1070 231 1145 266 1075 301Z" fill="#3b367e" stroke="#a99dff" stroke-width="1.5"/>
+ <path d="M1000 265 1075 301 1075 350 1000 314Z" fill="#211f50" stroke="#8174ed"/>
+ <path d="M1075 301 1145 266 1145 315 1075 350Z" fill="#302b70" stroke="#8174ed"/>
+ <path d="m1020 274 45-22m-43 36 45-22" stroke="#c0b8ff" stroke-width="4" stroke-linecap="round"/>
+</g>
+<!-- glowing 3D cube -->
+<g filter="url(#glow)">
+ <path d="m1050 43 42-21 42 21-42 22Z" fill="#8befff" fill-opacity=".8" stroke="#b5f6ff"/>
+ <path d="m1050 43 42 22v48l-42-22Z" fill="#167ba5" stroke="#72eaff"/>
+ <path d="m1092 65 42-22v48l-42 22Z" fill="#4c4bb0" stroke="#b5aaff"/>
+</g>
+<!-- left text -->
+<g font-family="Arial, Helvetica, sans-serif">
+ <text x="62" y="116" fill="#67dfff" font-size="15" font-weight="700" letter-spacing="5">PORTFOLIO / 2026</text>
+ <text x="58" y="190" fill="#f2f8ff" font-size="66" font-weight="800" letter-spacing="2">HAMMAD</text>
+ <path d="M62 211H450" stroke="url(#cyan)" stroke-width="4" stroke-linecap="round"/>
+ <text x="64" y="252" fill="#a9c7d9" font-size="22" letter-spacing="2">SOFTWARE ENGINEER</text>
+ <text x="64" y="285" fill="#a9c7d9" font-size="18" letter-spacing="1.5">AI  ·  UNITY  ·  BLENDER  ·  PYTHON</text>
+ <text x="64" y="352" fill="#61d9f7" font-size="14" letter-spacing="3">BUILDING IDEAS INTO REALITY</text>
+</g>
+<!-- small particles -->
+<g fill="#8cecff" opacity=".8"><circle cx="566" cy="67" r="3"/><circle cx="590" cy="94" r="2"/><circle cx="575" cy="295" r="3"/><circle cx="1160" cy="160" r="2"/><circle cx="955" cy="28" r="2"/></g>
+</svg>
